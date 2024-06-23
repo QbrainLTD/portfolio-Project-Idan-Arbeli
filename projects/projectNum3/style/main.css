@@ -20,7 +20,7 @@ header {
     width: 100vw;
     height: 100%;
     margin: 0 auto;
-    background-image: url("./projects/projectNum3/images/path15.png");
+    background-image: url("/projects/projectNum3/images/path15.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* UI Properties */
@@ -53,7 +53,7 @@ header {
 }
 
 .forme {
-    gap:10px;
+    gap: 10px;
     margin: 0 auto;
     display: grid;
     width: 50vw;
@@ -146,24 +146,24 @@ header {
 
     .forme {
         margin-top: 40px;
-        padding:0px;
+        padding: 0px;
         width: 100vw;
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap: 30px;
         padding-right: 30px;
     }
 
 
-    .formBox{
+    .formBox {
         width: 80vw;
-        
+
     }
 
-        .submitBtn {
+    .submitBtn {
         width: 80vw;
 
-        }
+    }
 
 
 
