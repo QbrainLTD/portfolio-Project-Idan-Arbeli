@@ -37,12 +37,8 @@ To view the project locally
 
 
 https://github.com/QbrainLTD/portfolio-Project-Idan-Arbeli.git
-Navigate to the project directory:
-bash
-Copy code
-cd portfolio-project
+
 Open index.html in your web browser.
-Usage
 Navigate through the portfolio to explore the different landing pages and see the implementation of various web technologies.
 
 Contributing
