@@ -223,11 +223,16 @@ nav {
 
 @media (max-width: 576px) and (max-width: 880px) {
   .headerbox {
-    height: 331px;
+    height: 380px;
     width: 100vw;
   }
-  .headerpara {
+  .headerbox > p {
     width: 60vw;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .headerbox > h2 {
+    width: 80vw;
     text-align: center;
   }
   .maintitle {
@@ -304,7 +309,7 @@ nav {
 @media (max-width: 768px) {
   .me {
     width: 100vw;
-    height: 1257px;
+    height: 1300px;
   }
   .cvText {
     width: 80vw;
