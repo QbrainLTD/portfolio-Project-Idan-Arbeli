@@ -15,14 +15,14 @@ html {
   margin-bottom: 30px;
 }
 
-.galleryText>h2 {
+.galleryText > h2 {
   font: normal normal 900 36px/53px Heebo;
   letter-spacing: 0px;
   color: #3A3A3A;
   opacity: 1;
 }
 
-.galleryText>p {
+.galleryText > p {
   font: normal normal normal 20px/29px Heebo;
   letter-spacing: 0px;
   color: #3A3A3A;
@@ -40,19 +40,19 @@ html {
   margin-bottom: 20vh;
 }
 
-.item section>img {
+.item section > img {
   width: 100%;
   height: 18vh;
   border-radius: 15px;
 }
 
-.item section>h3 {
+.item section > h3 {
   font: normal normal medium 23px/34px Heebo;
   color: #3A3A3A;
   padding: 10px;
 }
 
-.item section>button {
+.item section > button {
   background: #1AE0EC 0% 0% no-repeat padding-box;
   border-radius: 15px;
   opacity: 1;
@@ -60,7 +60,7 @@ html {
   margin-top: 6vh;
 }
 
-.item section>p {
+.item section > p {
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -89,7 +89,6 @@ html {
     align-items: center;
   }
 }
-
 .contanier {
   width: 100vw;
   position: fixed;
@@ -150,27 +149,22 @@ nav {
     left: 0;
     background-color: white;
   }
-
   .nav:hover nav {
     display: flex;
     height: 30vh;
   }
-
   .menu-icon {
     display: block;
     top: 0px;
     position: fixed;
   }
-
   .userName {
     display: none;
   }
-
   .logoImg {
     position: relative;
   }
 }
-
 .headerbox {
   margin: 0 auto;
   text-align: center;
@@ -184,12 +178,12 @@ nav {
   padding: 40px;
 }
 
-.headerbox>h2 {
+.headerbox > h2 {
   padding-top: 70px;
   font-size: 4rem;
 }
 
-.headerbox>p {
+.headerbox > p {
   font-size: 1.7rem;
   text-align: center;
   width: 400px;
@@ -216,13 +210,13 @@ nav {
   margin: 0 auto;
 }
 
-.bringThem>h3 {
+.bringThem > h3 {
   margin: 0 auto;
   font-size: 4rem;
   color: #fff;
 }
 
-.ribbonImg>img {
+.ribbonImg > img {
   width: 10vw;
   height: 150px;
 }
@@ -232,23 +226,19 @@ nav {
     height: 380px;
     width: 100vw;
   }
-
-  .headerbox>p {
+  .headerbox > p {
     width: 60vw;
     text-align: center;
     font-size: 1.3rem;
   }
-
-  .headerbox>h2 {
+  .headerbox > h2 {
     width: 80vw;
     text-align: center;
   }
-
   .maintitle {
     padding-top: 10px;
     font-size: 2.5rem;
   }
-
   .counter {
     width: 100vw;
     font-family: Arial, sans-serif;
@@ -258,17 +248,14 @@ nav {
     margin-top: 0px;
     margin: 0 auto;
   }
-
-  .bringThem>h3 {
+  .bringThem > h3 {
     font-size: 2.5rem;
   }
-
-  .ribbonImg>img {
+  .ribbonImg > img {
     width: 40vw;
     height: 150px;
   }
 }
-
 .me {
   height: 800px;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
@@ -323,60 +310,45 @@ nav {
   .cvText {
     width: 80vw;
   }
-
   .writer {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 768px) {
   .me {
     height: 100vh;
   }
-
   .cvText {
-    width: 80vw;
+    width: 85vw;
     font-size: 1rem;
   }
-
   .writer {
     font-size: 1.5rem;
   }
 }
-
 @media (max-width: 480px) {
-  .me {
-    height: 100vh;
-    width: 100vw;
-  }
-
   .imgface {
     width: 150px;
     height: 150px;
   }
-
   .cvText {
     width: 90vw;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-
   .writer {
     font-size: 1.2rem;
   }
-
   .cvButton {
     font-size: 1.2rem;
     padding: 10px 15px;
   }
 }
-
 @media (max-width: 375px) {
   .cvText {
     width: 90vw;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
-
 .contactContainer {
   width: 100vw;
   height: 958px;
@@ -384,12 +356,12 @@ nav {
   display: flex;
 }
 
-.titles-container>h1 {
+.titles-container > h1 {
   font: normal normal 900 43px/63px Heebo;
   color: #ffffff;
 }
 
-.titles-container>p {
+.titles-container > p {
   font: normal normal normal 20px/29px Heebo;
   color: #ffffff;
 }
@@ -398,7 +370,7 @@ nav {
   width: 50%;
 }
 
-.img-contanier>img {
+.img-contanier > img {
   width: 100%;
   height: 100vh;
   display: block;
@@ -417,14 +389,14 @@ nav {
   width: 55%;
 }
 
-.formControl>label {
+.formControl > label {
   font: normal normal bold 16px/24px Heebo;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 }
 
-.formControl>input {
+.formControl > input {
   width: 25vw;
   height: 50px;
   background: #E5EEFF 0% 0% no-repeat padding-box;
@@ -432,7 +404,7 @@ nav {
   border-bottom: 3px solid #020253;
 }
 
-.form-control-btn>input {
+.form-control-btn > input {
   width: 10vw;
   height: 50px;
   font: normal normal bold 22px/30px Heebo;
@@ -460,7 +432,7 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-.bottomBar>h2 {
+.bottomBar > h2 {
   margin-top: 5px;
   padding: 6px;
 }
@@ -496,38 +468,29 @@ nav {
     width: 100vw;
     height: 100vh;
   }
-
-  .img-contanier>img {
+  .img-contanier > img {
     width: 100%;
     height: 20vh;
     display: block;
   }
-
   .form-container {
     width: 100vw;
   }
-
-  .titles-container>p {
+  .titles-container > p {
     width: 80vw;
   }
-
-  .formControl>input {
+  .formControl > input {
     width: 80vw;
   }
-
-  .form-control-btn>input {
+  .form-control-btn > input {
     width: 30vw;
     margin-bottom: 6vh;
   }
-
   .socialInfo {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-
-  .bottomBar>h2 {
+  .bottomBar > h2 {
     font-size: 1.1rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -69,7 +69,7 @@
     }
 
     .cvText {
-        width: 80vw;
+        width: 85vw;
         font-size: 1rem;
     }
 
@@ -79,11 +79,7 @@
 }
 
 @media (max-width: 480px) {
-    .me {
-        height: 100vh;
-        width: 100vw;
-    }
-
+ 
     .imgface {
         width: 150px;
         height: 150px;
@@ -91,7 +87,7 @@
 
     .cvText {
         width: 90vw;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .writer {
@@ -107,7 +103,7 @@
 @media (max-width: 375px) {
     .cvText {
         width: 90vw;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
 }
