@@ -35,10 +35,8 @@ The gallery contains the following 6 landing pages:
 Installation
 To view the project locally
 
-Clone the repository
-bash
-Copy code
-git clone https://github.com/yourusername/portfolio-project.git
+
+https://github.com/QbrainLTD/portfolio-Project-Idan-Arbeli.git
 Navigate to the project directory:
 bash
 Copy code
