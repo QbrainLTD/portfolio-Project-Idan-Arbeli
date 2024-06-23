@@ -107,7 +107,7 @@
     align-items: center;
     background-image: linear-gradient(to right, rgb(224, 224, 224), rgb(234, 242, 255));
     box-shadow: 12px 12px 12px #000000;
-   
+
 }
 
 .socialInfo {
@@ -124,7 +124,7 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 800px) {
 
     .contactContainer {
         display: flex;
@@ -167,7 +167,9 @@
     }
 
     .bottomBar>h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
 }
+
+@media (max-width: 800px) {}
