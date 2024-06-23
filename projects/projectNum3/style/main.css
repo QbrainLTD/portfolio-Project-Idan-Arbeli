@@ -20,7 +20,7 @@ header {
     width: 100vw;
     height: 100%;
     margin: 0 auto;
-    background-image: url("/projects/projectNum3/images/path15.png");
+    background-image: url("./projects/projectNum3/images/path15.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* UI Properties */
