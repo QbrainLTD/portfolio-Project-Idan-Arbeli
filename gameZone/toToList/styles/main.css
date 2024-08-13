@@ -25,6 +25,10 @@ body {
         filter: blur(100px);
     }
 
+    body{
+        overflow: scroll
+    }
+
     .btn-group {
         flex-direction: column !important;
     }
