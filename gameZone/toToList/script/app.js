@@ -77,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         taskItem.className = `list-group-item d-flex justify-content-between align-items-center priority-${priority.toLowerCase()}`;
         taskItem.innerHTML = `
-        <span>${taskText} <small class="text-muted">(Due: ${formattedDueDate}, Priority: ${priority})</small><br><small class="text-info">${timeToComplete}</small></span>
-        <div>
-            <button class="btn btn-success btn-sm me-2 complete-task">Complete</button>
-            <button class="btn btn-danger btn-sm delete-task">Delete</button>
-            <button class="btn btn-secondary btn-sm edit-task">Edit</button>
-        </div>
-    `;
+    <span>${taskText} <small class="text-muted">(Due: ${formattedDueDate}, Priority: ${priority})</small><br><small class="text-info">${timeToComplete}</small></span>
+    <div class="d-flex"> <!-- Ensuring d-flex class is here -->
+        <button class="btn btn-success btn-sm me-2 complete-task">הושלם</button>
+        <button class="btn btn-danger btn-sm delete-task">מחיקה</button>
+        <button class="btn btn-secondary btn-sm edit-task">עריכה</button>
+    </div>
+`;
         taskItem.draggable = true;
         addDragAndDropEvents(taskItem);
         taskList.appendChild(taskItem);

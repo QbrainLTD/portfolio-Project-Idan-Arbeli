@@ -69,9 +69,9 @@ nav {
 
     .nav:hover nav {
         display: flex;
-        height: 30vh;
+        height: 45vh;
 
-        
+
     }
 
     .menu-icon {
@@ -86,5 +86,31 @@ nav {
 
     .logoImg {
         position: relative;
+    }
+
+    /* Reorder links */
+    .nav nav a:nth-child(1) {
+        order: 5;
+        /* צור קשר */
+    }
+
+    .nav nav a:nth-child(2) {
+        order: 3;
+        /* Game Zone */
+    }
+
+    .nav nav a:nth-child(3) {
+        order: 1;
+        /* ראשי */
+    }
+
+    .nav nav a:nth-child(4) {
+        order: 4;
+        /* אודות */
+    }
+
+    .nav nav a:nth-child(5) {
+        order: 2;
+        /* הפרויקטים */
     }
 }
