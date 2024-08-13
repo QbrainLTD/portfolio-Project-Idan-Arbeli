@@ -27,12 +27,29 @@ Pre-pages: HTML + CSS
 
 JavaScript Projects
 
-Country Data: A project displaying country information, including population, language, and the ability to view the country on a map.
-Weather App: A weather app that provides forecasts based on location, including dynamic updates for weather conditions.
-Snake Game: A classic Snake game built using JavaScript, with options to change the speed and difficulty for an engaging experience.
-To-Do List Manager: A task management game that lets you prioritize and organize tasks, complete with a timer and the ability to track task completion.
-Tic-Tac-Toe Game: A simple Tic-Tac-Toe game with options to restart and keep track of scores, all built with JavaScript.
-Stack Builder: A stack-building game that challenges players to balance elements correctly, adding a new element to the stack with each successful move.
+1.Country Data: A project displaying country information, including population, language, and the ability to view the country on a map. 
+HTML + CSS & Bootstrap +  JS + using REST API 
+
+2.Weather App: A weather app that provides forecasts based on location, including dynamic updates for weather conditions.
+HTML + CSS + JS + using REST API 
+
+3.Snake Game: A classic Snake game built using JavaScript, with options to change the speed and difficulty for an engaging experience.
+
+HTML + CSS + JS: work with local storage, setup enum for directions, using pure Js. 
+
+4.To-Do List Manager: A task management game that lets you prioritize and organize tasks, complete with a timer and the ability to track task completion.
+
+HTML + CSS & Bootstrap + JS: work with local storage, arrage task by drag and drop, create history task. showcasing toast for varity of alerts.
+
+5.Tic-Tac-Toe Game: A simple Tic-Tac-Toe game with options to restart and keep track of scores, all built with JavaScript.
+
+HTML + CSS + JS : works with arrays and functions using native actions like :  setTimeout and "for of" etc... .   
+
+6.Stack Builder: A stack-building game that challenges players to balance elements correctly, adding a new element to the stack with each successful move.
+
+HTML + CSS + JS : using appendChild to add different div's over the screen. 
+
+
 Gallery
 The gallery contains the following 6 landing pages:
 
