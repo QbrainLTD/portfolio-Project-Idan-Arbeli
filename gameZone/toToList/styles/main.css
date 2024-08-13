@@ -1,0 +1,33 @@
+  body{
+  
+  background: #221f2f;
+  overflow: hidden;
+  }
+
+  body::before{
+        background-color: #ed2ff0;
+            left: 15%;
+            top: 20%;
+            filter: blur(150px);
+  }
+
+  body::after{
+    background-color: #22a8cd;
+        left: 80%;
+        top: 74%;
+        filter: blur(150px);
+
+  }
+
+
+.priority-high {
+    border-left: 5px solid red;
+}
+
+.priority-medium {
+    border-left: 5px solid orange;
+}
+
+.priority-low {
+    border-left: 5px solid green;
+}

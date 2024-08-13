@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./images/faviconQbrain.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left" id="emptySpace"></div>
+        <div class="right" dir="rtl">
+            <h2>בונה מסכים</h2>
+            <p>בחר אוביקט והוסף אותו למסך</p>
+            <form>
+
+                <label for="width">רוחב</label>
+                <input type="text" id="width" name="width" value="100px">
+
+                <label for="height">גובה</label>
+                <input type="text" id="height" name="height" value="100px">
+
+                <label for="content">תוכן</label>
+                <textarea id="content" name="content" placeholder="כתוב תוכן"></textarea>
+
+                <label for="background-color">צבע רקע</label>
+                <input type="color" id="background-color" name="background-color" value="#3980C8">
+
+                <label for="font-size">גודל גופן</label>
+                <input type="text" id="font-size" name="font-size" value="10px">
+                <label>עיגול פינות</label>
+                <input type="text" id="radius" name="radius" value="5px">
+
+                <button type="button" id="addBtn">הוסף</button>
+                <button type="button" class="clear">נקה מסך</button>
+                <button type="button" id="resetBtn">איפוס</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+
+</html>

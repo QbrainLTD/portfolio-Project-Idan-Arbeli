@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 650px;
+    position: relative;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-box i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-box .search-btn {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box .search-btn i {
+    margin: 0;
+}
+
+
+.suggestions-container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.suggestions-container div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-container div:hover {
+    background-color: #f0f0f0;
+}
+
+
+.city-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.city-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #5494cd;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.city-button:hover {
+    background-color: #bc5fdc;
+}
+
+
+.not-found {
+    display: none;
+    margin-top: 20px;
+}
+
+.not-found img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    color: #ff4c4c;
+}
+
+
+.weather-box {
+    display: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.weather-box .weather-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+
+}
+
+.weather-box .temperature {
+    font-size: 2rem;
+
+
+}
+
+.weather-box .description {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-details div {
+    display: flex;
+    align-items: center;
+}
+
+.weather-details i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.weather-details .text {
+    text-align: left;
+}
+
+.weather-details .text span {
+    font-size: 1.2rem;
+    display: block;
+    padding: 12px;
+}
+
+.weather-details .text p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.rss-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.rss-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+.rss-content span {
+    margin-right: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.rss-content img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.rss-content span:nth-child(odd) {
+    margin-right: 15px;
+    color: #ccc;
+}
+
+.rss-content span:nth-child(even) {
+    margin-right: 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(10);
+    }
+
+    to {
+        transform: translateX(-80%);
+    }
+}
