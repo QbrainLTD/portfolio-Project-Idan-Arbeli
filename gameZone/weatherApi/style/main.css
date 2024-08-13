@@ -226,6 +226,24 @@ body {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 800px) {
+
+.rss-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+}
+
 @keyframes scroll {
     from {
         transform: translateX(10);
@@ -234,4 +252,5 @@ body {
     to {
         transform: translateX(-80%);
     }
+
 }
