@@ -1,13 +1,13 @@
 let player = "X";
 let board = ["", "", "", "", "", "", "", "", ""];
-
+//מערך אפשרויות ניצחון
 const winPatterns = [
   [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
   [0, 3, 6], [1, 4, 7], [2, 5, 8], // columns
   [0, 4, 8], [2, 4, 6]             // diagonals
 ];
 
-
+//בדיקת ניצחון
 function checkWin() {
   for (let pattern of winPatterns) {
     const [a, b, c] = pattern;
@@ -18,12 +18,12 @@ function checkWin() {
   return false;
 }
 
-
+//בדיקת תיקו
 function checkTie() {
   return board.every(cell => cell !== "");
 }
 
-
+// אתחול המשחק
 function resetGame() {
   board = ["", "", "", "", "", "", "", "", ""];
   player = "X";
@@ -32,7 +32,7 @@ function resetGame() {
   });
 }
 
-// Handle a player's move
+// פונקציה ביצוע הפעולה
 function makeMove(cellIndex, cell) {
   if (board[cellIndex] === "") {
     board[cellIndex] = player;
@@ -59,6 +59,8 @@ document.querySelectorAll(".cell").forEach((cell, index) => {
     makeMove(index, cell);
   });
 });
+
+//כפתור לאתחול המסך
 
 let btn = document.querySelector('.restart-button');
 btn.addEventListener('click', resetGame);

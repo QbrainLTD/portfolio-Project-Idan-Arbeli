@@ -21,7 +21,7 @@ let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
 
 
-// הגדרת 
+//הגדרצ צדדים 
 const Direction = {
     UP: 'UP',
     DOWN: 'DOWN',
@@ -37,7 +37,7 @@ const keyToDirection = {
 };
 
 
-// Map directions to their corresponding vectors
+// מיפוי הצדדים
 const directionVectors = {
     [Direction.UP]: { x: 0, y: -1 },
     [Direction.DOWN]: { x: 0, y: 1 },
@@ -55,7 +55,7 @@ document.addEventListener("keyup", (e) => {
 const changeDirection = (direction) => {
     const { x, y } = directionVectors[direction];
 
-    // Prevent the snake from moving directly in the opposite direction
+    // מניעה מהנחש לללכת לכיוון ההפוך.
     if (velocityX !== -x || velocityY !== -y) {
         velocityX = x;
         velocityY = y;

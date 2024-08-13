@@ -7,9 +7,10 @@ const error404 = document.querySelector('.not-found');
 const suggestionsContainer = document.getElementById('suggestions-container');
 const cityButtons = document.querySelectorAll('.city-button');
 
+//מפתח API - שימוש במידע חיצוני
 const APIKey = 'e4c2b121defd0eb70dddd90d67acad43';
 
-
+// מערך כלל התמונות בכלל המצבים שיכולים להכיל בשינויי מזג האויר
 const weatherImages = {
     'Clear': 'images/01 Sunny COLOR.gif',
     'Clouds': {
@@ -56,6 +57,7 @@ const weatherImages = {
     'Tornado': 'images/20 Tornado COLOR.gif',
 };
 
+// מערך ערים פופלריות לשימוש - RSS FEED
 const cities = [
     { name: "Paris, France", code: "Paris" },
     { name: "Bangkok, Thailand", code: "Bangkok" },
@@ -69,7 +71,7 @@ const cities = [
     { name: "Rome, Italy", code: "Rome" }
 ];
 
-
+// פונקציה מרכזית להחזרת מידע מזג האויר מחיפוש 
 function getWeather(city) {
     if (!city) return;
 
@@ -172,7 +174,7 @@ searchInput.addEventListener('input', () => {
         });
 });
 
-
+// עדכון RSS FEED
 function updateRSSBar() {
     const rssContent = document.querySelector('.rss-content');
     rssContent.innerHTML = '';
@@ -199,6 +201,8 @@ function updateRSSBar() {
             .catch(error => console.error('Error fetching weather data:', error));
     });
 }
+
+// הוספת אייקון - RSS FEED
 
 function getWeatherIcon(weather) {
 

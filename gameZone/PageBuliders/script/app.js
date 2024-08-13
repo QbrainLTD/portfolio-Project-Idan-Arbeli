@@ -1,4 +1,4 @@
-
+// הגדרת משנים גלובליים
 let colorInput = document.getElementById("background-color");
 let newDiv = document.createElement("div");
 let divWidth = document.getElementById('width');
@@ -7,7 +7,7 @@ let textBox = document.getElementById("content");
 let fontSizeInput = document.getElementById("font-size");
 let fontTypeInput = document.getElementById("font-type");
 let borderRadius = document.getElementById("radius");
-
+//יצירת div לפי הגדרות המשתמש
 function addDiv() {
     let newDiv = document.createElement("div");
     newDiv.style.width = divWidth.value.includes('px') ? divWidth.value : divWidth.value + 'px';
@@ -21,7 +21,7 @@ function addDiv() {
     destinationDiv.appendChild(newDiv);
 
 }
-
+//פונקציה להשבת נתונים ראשוניים לתיבות
 function reset() {
     divWidth.value = "100px";
     divHeight.value = "100px";
@@ -30,14 +30,14 @@ function reset() {
     borderRadius.value = "5px";
     colorInput.value = "#3980C8";
 }
-
+//פונקציה לצורך ניקוי המסך
 function clearScreen() {
     let destinationDiv = document.getElementById("emptySpace");
     destinationDiv.innerHTML = ""; 
 
 }
 
-
+//הוספת פעולה לכפתורים. 
 let myButton = document.querySelector("#addBtn");
 myButton.addEventListener("click", addDiv);
 

@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let draggedItem = null;
     let currentTaskItem = null; // to track the task being edited
 
+    // פונקציה המציגה הודעה למשתמש על כל פעולה שהוא מבצע
+
     function showToast(message) {
         const toastLiveExample = document.getElementById('liveToast');
         const toastBody = toastLiveExample.querySelector('.toast-body');
@@ -12,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         toastBootstrap.show();
     }
 
+    //קריאה לפעולה בכפתור עדיפות לדחיפות ביצוע המשימה
     document.getElementById('priorityDropdown').addEventListener('click', function (event) {
         event.preventDefault();
         if (event.target.tagName === 'A') {
@@ -30,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
             showToast('Priority set to: ' + selectedPriority);
         }
     });
+
+    // הוספת משימה תוך בדיקה ופעולה כאשר מנסים להכניס משימה ריקה או שהתאריך של המשימה עבר
 
     document.getElementById('add-task').addEventListener('click', function () {
         const taskInput = document.getElementById('new-task');
@@ -105,6 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    //חישוב זמן לביצוע המשימה והצגה
+
     function calculateTimeToComplete(currentTime, dueDateTime) {
         if (!dueDateTime || dueDateTime <= currentTime) {
             const formattedCurrentTime = currentTime.toLocaleDateString('en-GB', {
@@ -140,6 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return `Due Date: ${formattedDueDate} | Time left: ${days} days, ${hours} hours, and ${minutes} minutes`;
     }
 
+    // שמירת משימה באחסון דפדפן 
+
     function saveTask(taskText, priority, dueDateTime, timeToComplete) {
         let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
         tasks.push({
@@ -158,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // אפשרות גרירת משימות ושינוי סדר על גבי המסך
     function addDragAndDropEvents(taskItem) {
         taskItem.addEventListener('dragstart', function (e) {
             draggedItem = taskItem;
