@@ -22,6 +22,7 @@ html {
     left: 10px;
     padding: 0;
     color: #454545;
+    font-family: Bebas Neue;
 
 }
 
@@ -65,6 +66,7 @@ nav {
     font-size: 4rem;
     width: 100vw;
     padding-top: 10vh;
+    font-family: open sans;
 }
 
 .headerbox>p {

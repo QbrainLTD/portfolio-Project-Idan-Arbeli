@@ -22,7 +22,7 @@ html {
     left: 10px;
     padding: 0;
     color: #454545;
-    font-family: 'open sans';
+    font-family: Bebas Neue;
     font-weight: 600;
     font-size: 1.5rem;
 
@@ -56,7 +56,7 @@ nav {
     background-image: linear-gradient(to right, rgb(222, 127, 253), rgb(7, 86, 223));
     color: #fff;
     box-shadow: 3px 3px 3px #000;
-    font-family: "open sans";
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 40vh;
     text-align: center;
@@ -66,6 +66,7 @@ nav {
     font-size: 4rem;
     width: 100vw;
     padding-top: 10vh;
+    font-family: open sans;
 }
 
 .headerbox>p {
